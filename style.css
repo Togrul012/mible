@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+}
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tile {
+    width: 60px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+}
+
+#player-hand, #bot-hand {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
